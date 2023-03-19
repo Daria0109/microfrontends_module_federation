@@ -44,7 +44,9 @@ module.exports = {
       name: "product_detailed_page",
       filename: "remoteEntry.js",
       remotes: {
-        home: "home@http://localhost:8080/remoteEntry.js"
+        home: "home@http://localhost:8080/remoteEntry.js",
+        product_detailed_page: "product_detailed_page@http://localhost:3000/remoteEntry.js",
+        cart: "cart@http://localhost:3002/remoteEntry.js",
       },
       exposes: {},
       shared: {

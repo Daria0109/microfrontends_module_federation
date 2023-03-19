@@ -43,7 +43,11 @@ module.exports = {
     new ModuleFederationPlugin({
       name: "home",
       filename: "remoteEntry.js",
-      remotes: {},
+      remotes: {
+        home: "home@http://localhost:8080/remoteEntry.js",
+        product_detailed_page: "product_detailed_page@http://localhost:3000/remoteEntry.js",
+        cart: "cart@http://localhost:3002/remoteEntry.js",
+      },
       exposes: {
         "./Header": "./src/Header.jsx",
         "./Footer": "./src/Footer.jsx",

@@ -4,6 +4,7 @@ import { useEffect, useState } from 'react';
 const API_SERVER = "http://localhost:3001";
 
 export const jwt = new BehaviorSubject(null);
+export const cart = new BehaviorSubject(null);
 
 export const getCart = () =>
 	fetch(`${API_SERVER}/cart`, {
